@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    color: black;
+    font-family: "Reddit Mono", monospace;
+}
+
+.header{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+#logo{
+    width: 85px;
+    margin-left: 10px;
+}
+
+ul{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+li{
+    list-style: none;
+    font-size: medium;
+    color: #FFA;
+}
+
+#but{
+    background-color: #024102;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#but:hover {
+    border-color: #9acd32;
+    border-radius: 5px;
+}
+
+a {
+    border: 2px solid black; /* Definindo a borda com 2 pixels de largura e estilo sólido */
+    padding: 10px; /* Adicionando preenchimento para separar o conteúdo da borda */
+    transition: border-color 0.3s; /* Adicionando uma transição suave para a mudança de cor */
+    border-radius: 5px;
+}
+
+a:hover {
+    border-color: yellowgreen;
+    border-radius: 5px;
+}
+
+#main{
+    background: hsla(35, 35%, 34%, 1);
+    background: linear-gradient(90deg, hsla(35, 35%, 34%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(35, 35%, 34%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(35, 35%, 34%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#735A38", endColorstr="#000000", GradientType=1 );
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #FFA ;
+}
+
+label{
+    color: #FFA ;
+}
+
+input{
+    border-radius: 5px;
+    border: 2px solid rgba( 255, 255, 255, 0.1 );
+}
+
+form{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 #dfb172;
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+button{
+    background: #FFA ;
+    border-radius: 5px;
+    border: 1px solid #FFA;
+    padding: 5px;
+    width: 150px;
+}
+
+button:hover {
+    border-color: black;
+    border-radius: 5px;
+}
+
+.idade{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 #dfb172;
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    width: 55vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #FFA ;
+}
+
+footer{
+    background-color: #745B38;
+    width: 100%;
+    height: 5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    font-size: smaller;
+}
+#copyright{
+    margin-left: 10px;
+}
+
+body{
+    background-color: black;
+}

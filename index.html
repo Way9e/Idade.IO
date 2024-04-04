@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- ------- -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Idade.IO</title>
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="favicon\android-chrome-512x512.png" alt="Logo do site">
+        <ul>
+            <a href="index2.html" target="_blank"><li>Como?</li></a>
+            <a href="index2.html" target="_blank"><li>Quando?</li></a>
+            <a id="but" href="index2.html" target="_blank"><li>Porque?</li></a>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="formulario">
+            <form action="index.html" method="post">
+                <h1>FORMULARIO</h1>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="idade">Idade</label>
+                <input type="text" name="idade" id="idade">
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor">
+                <button onclick="submeter()"id="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="idade" id=".idade">
+            <h2 id="nome_"><script>submeter()</script></h2>
+            <h2 id="idade_"><script>submeter()</script></h2>
+        </div>
+    </div>
+
+    <script>
+        function submeter() { 
+          let nome = document.getElementById("nome").value;
+          let idade = document.getElementById("idade").value;
+          let cor = document.getElementById("cor").value;
+          document.getElementById("nome_").innerHTML = "Olá, " + nome;
+          document.getElementById("idade_").innerHTML = "Voce nasceu em: " + (new Date().getFullYear() - idade);
+          document.getElementById(".idade").style.backgroundColor = cor;
+          event.preventDefault();
+      }
+    </script>
+
+    <footer>
+        <p id="copyright">Copyright © 2024 Ana Reis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
